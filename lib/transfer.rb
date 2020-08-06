@@ -10,7 +10,7 @@ class Transfer
     @status = "pending"
   end
 
-  def both_valid?
+  def valid?
     binding.pry
     if sender.valid? && receiver.valid?
       true
