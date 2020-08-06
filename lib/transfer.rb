@@ -1,3 +1,4 @@
+require 'pry'
 class Transfer
   # your code here
   attr_accessor :sender, :receiver, :amount, :status
@@ -10,6 +11,7 @@ class Transfer
   end
 
   def both_valid?
+    binding.pry
     if sender.valid? && receiver.valid?
       true
     else
