@@ -23,7 +23,7 @@ class Transfer
     #binding.pry
     if @sender.balance < @amount || valid? == false
       @status = "rejected"
-      print "Transaction rejected. Please check your account balance."
+      return "Transaction rejected. Please check your account balance."
     elsif @status == "complete"
       print "Transaction was already executed"
     else
