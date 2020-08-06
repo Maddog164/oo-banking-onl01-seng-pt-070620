@@ -31,6 +31,7 @@ class Transfer
       @receiver.deposit(@amount)
       @status = "complete"
     end
+    binding.pry
   end
 
 
